@@ -1,2 +1,1 @@
-﻿# auto_test
-Репозиторий для тестов
+﻿# Green Valley
