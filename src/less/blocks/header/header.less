@@ -1,0 +1,70 @@
+body {
+  // background-color: blue;
+}
+
+.page-header {
+  background-color: yellow;
+  // display: flex;
+  // flex-direction: column;
+  @media @desktop {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 16px;/////////////////////////////////
+  }
+}
+
+.page-header__inner {
+    display: flex;
+    flex-direction: column;
+  @media @desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    // align-content: stretch;
+    // align-items: stretch;
+    // max-width: 84%;
+    // width: 84%;
+    width: 1180px;
+    min-width: 1024px;
+    margin: 0 auto;
+    // .padding(0, 110);
+    .main-nav__list {
+      // .webkit-40;
+      // margin-left: -76px;
+    }
+  }
+  .page-header__contacts {
+    display: none;
+    @media @desktop {
+      display: block;
+      // display: inline-block;
+      min-width: 200px;
+      margin-top: 7px;
+      // margin-right: 40px;
+      // margin-right: 3.7%;
+      // margin-left: 55px;
+    }
+    .page-header__contacts-tel {
+      display: block;
+      .font-size(18);
+      font-family: 'PT Sans Caption', sans-serif;
+      letter-spacing: 0.8px;
+      margin-bottom: 3px;
+    }
+    .page-header__contacts-address {
+      .textSmall;
+    }
+  }
+  .btn {
+    display: none;
+    @media @desktop {
+      display: inline-block;
+      margin-top: 11px;
+    }
+  }
+}
+
