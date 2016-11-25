@@ -1,6 +1,7 @@
 'use strict';
 
-//cd /c/Users/Artur/documents/work_hard/auto_test
+/*$pro = z/pjozects*/
+
 /*NODE_ENV=production gulp less  -  запускает сборку без SOURCEMAPS*/
 
 var gulp = require('gulp');
