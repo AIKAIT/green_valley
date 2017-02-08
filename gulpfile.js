@@ -41,7 +41,7 @@ gulp.task('less', function() {
       errorHandler: notify.onError(function(err) {
         return {
           message: "Ошибка: <%= error.message %>",
-         title: "Ошибка компиляции LESS"
+          title: "Ошибка компиляции LESS"
         };
       })
     }))
@@ -132,7 +132,7 @@ gulp.task('sprite', function() {                                                
 
 gulp.task('cmq', function() {                                                   //Комбинирует media queries
   // return gulp.src('/build/min.style.css')
-  gulp.src('build/style.css')
+  gulp.src('build/min.style.css')
     .pipe(debug({title: 'беру ---------'}))
     .pipe(mediaCombine())
     .pipe(debug({title: 'делаю ---------'}))

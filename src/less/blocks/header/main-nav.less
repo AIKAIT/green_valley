@@ -33,12 +33,13 @@
     border-bottom: 1px solid @light_grey;
     width: 100%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 15px  ;
     padding-bottom: 5px;
 
     @media @desktop {
       border: none;
-      padding-right: 18px;
+      // padding-right: 18px;
+      .padding(0, 18, 0, 0);
     }
   }
 
@@ -47,39 +48,23 @@
     display: block;
     .textMenu;
   }
+}
 
-
-  .main-nav__burger {
-    @media @desktop {
-      display: none;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    .burger-line() {
-      width: 28px;
-      height: 4.5px;
-      border-radius: 1.5px;
-      background-color: @orange;
-      position: absolute;
-    }
-    .burger-line;
-      top: 43px;
-      right: 23px;
-
-    &::before {
-      .burger-line;
-      content: "";
-      top: -10px;
-      // background-color: black;
-    }
-    &::after {
-      .burger-line;
-      content: "";
-      bottom: -9px;
-      // background-color: blue;
-    }
+.main-nav__burger {
+  width: 29px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 32px;
+  div {
+    width: 28px;
+    height: 4px;
+    background-color: @orange;
+    border-radius: 0.125rem;
+    margin-bottom: 5px;
+  }
+  @media @desktop {
+    display: none;
   }
 }
